@@ -1,0 +1,184 @@
+/* Root variables for colors */
+:root {
+  --primary-blue: #007bff;
+  --primary-green: #28a745;
+  --primary-yellow: #ffc107;
+  --primary-dark: #2c3e50;
+  --background-dark: #343a40;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, rgba(168, 16, 148, 0.93), #4ca1af);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+.header {
+  background-color: var(--primary-dark);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Navigation styling */
+.nav-buttons ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-buttons li {
+  display: inline-block;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  color: var(--primary-dark);
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-buttons a:hover {
+  background-color: #dbeafe;
+  transform: scale(1.05);
+}
+
+/* Form Section styling */
+.form-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  background-image: url("pic2.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 400px;
+  width: 90%;
+  margin: 2rem auto 4rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  color: #333;
+}
+
+.user-reg {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Input styles */
+.form-section input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;      /* Add a default border */
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;      /* Ensure padding is included in width */
+}
+
+.form-section input:focus {
+  border-color: var(--primary-blue);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional glow effect */
+}
+
+/* Button styling */
+.form-section .btn {
+  width: 100%;
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-section .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);  /* Slight scale effect on hover */
+}
+
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--background-dark);
+  color: white;
+  margin-top: 2rem;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.social-links h3 {
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0.4rem 0.5rem;
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.social-links a img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+/* Platform-specific colors */
+.social-links .facebook {
+  background-color: #1877f2;
+}
+
+.social-links .instagram {
+  background-color: #a81d36;
+}
+
+.social-links .twitter {
+  background-color: #1da1f2;
+}
+
+.social-links .linkedin {
+  background-color: #0077b5;
+}
+
+.social-links .youtube {
+  background-color: #ff0000;
+}
+
+.social-links a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
